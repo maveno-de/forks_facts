@@ -1,2 +1,14 @@
 ---
-# tasks file for forks_facts
+
+
+- name: Load Forks properties
+  include_tasks: properties.yml
+
+- name: Load Forks directories
+  include_tasks: directories.yml
+
+- name: Load Forks python facts
+  include_tasks: python.yml
+
+
+...
