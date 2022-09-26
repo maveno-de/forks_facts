@@ -2,7 +2,7 @@ galaxy_info:
   author: Javanaut
   description: Chia Fork Facts
   company: Maveno
-  role_name: facts
+  role_name: forks_facts
   namespace: maveno_de
 
   # If the issue tracker for your role is not on github, uncomment the
