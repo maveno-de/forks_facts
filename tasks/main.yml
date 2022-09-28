@@ -2,13 +2,25 @@
 
 
 - name: Load Forks properties
-  include_tasks: properties.yml
+  include_tasks:
+    file: properties.yml
+    apply:
+      tags: always
+  tags: always
 
 - name: Load Forks directories
-  include_tasks: directories.yml
+  include_tasks:
+    file: directories.yml
+    apply:
+      tags: always
+  tags: always
 
 - name: Load Forks python facts
-  include_tasks: python.yml
-
+  include_tasks:
+    file: python.yml
+    apply:
+      tags: always
+  tags: always
+     
 
 ...

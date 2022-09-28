@@ -20,10 +20,10 @@
     forksSourceDirectory: "{{ forksPrefixDirectory }}/src"
     forksLibraryDirectory: "{{ forksPrefixDirectory }}/lib"
     forksLibrary64Directory: "{{ forksPrefixDirectory }}/lib64"
-    forksNodeBinaryDirectory: "{{ forksPrefixDirectory }}/bin"
+    forksBinaryDirectory: "{{ forksPrefixDirectory }}/bin"
     forksLibexecDirectory: "{{ forksPrefixDirectory }}/libexec"
-    forksNodeSharedDirectory: "{{ forksPrefixDirectory }}/share"
-    forksNodeTempDirectory: "{{ forksPrefixDirectory }}/tmp"
+    forksSharedDirectory: "{{ forksPrefixDirectory }}/share"
+    forksTempDirectory: "{{ forksPrefixDirectory }}/tmp"
     forksSystemServiceDirectory: /etc/systemd/system
     
     forksSystemCaCertificatesFilePath: /etc/ssl/certs/ca-certificates.crt
