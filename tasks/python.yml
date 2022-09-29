@@ -1,0 +1,25 @@
+---
+
+
+- name: Set Forks python facts (part 1)
+  set_fact:
+
+    forksSystemPythonInterpreter: /usr/bin/python3
+
+    forksVenvPackages:
+      - requests
+      - packaging
+        
+    forksVenvDirectory: >-
+      /usr/local{% if forksVendorIdentifier is defined %}/{{
+      forksVendorIdentifier }}{% endif %}/share/{{
+      forksVendorIdentifier|default('forks') }}.venv
+
+
+- name: Set Forks python facts (part 2)
+  set_fact:
+
+    forksVenvInterpreterPath: "{{ forksVenvDirectory }}/bin/python"
+
+
+...

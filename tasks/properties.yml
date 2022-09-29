@@ -1,0 +1,65 @@
+---
+
+
+- name: Set Forks properties
+  set_fact:
+
+    forksPropertiesLookupTable:
+      chia:
+        repository: Chia-Network/chia-blockchain
+        nodePort: 8444
+        nodeRpcPort: 8555
+        farmerPort: 8447
+      chives:
+        repository: HiveProject2021/chives-blockchain
+        nodePort: 9699
+        nodeRpcPort: 9755
+        farmerPort: 9647
+      hddcoin:
+        repository: HDDcoin-Network/hddcoin-blockchain
+        databaseVersion: 1
+        nodePort: 28444
+        nodeRpcPort: 28555
+        farmerPort: 28447
+        alias: hdd
+      stai:
+        repository: STATION-I/stai-blockchain
+        nodePort: 1999
+        nodeRpcPort: 1758
+        farmerPort: 1692
+      flax:
+        repository: Flax-Network/flax-blockchain
+        nodePort: 6888
+        nodeRpcPort: 6755
+        farmerPort: 6885
+      greendoge:
+        repository: GreenDoge-Network/greendoge-blockchain
+        databaseVersion: 1
+        nodePort: 6544
+        nodeRpcPort: 6655
+        farmerPort: 6547
+        alias: gdog
+      skynet:
+        repository: SkynetNetwork/skynet-blockchain
+        databaseVersion: 1
+        nodePort: 9999
+        nodeRpcPort: 9989
+        farmerPort: 9998
+        alias: sky
+      ecostake:
+        repository: Ecostake-Network/ecostake-blockchain
+        nodePort: 38444
+        nodeRpcPort: 38554
+        farmerPort: 38441
+        alias: eco
+      silicoin:
+        repository: zcomputerwiz/silicoin-blockchain
+        nodePort: 22222
+        nodeRpcPort: 22555
+        farmerPort: 22447
+        executableName: sit
+        configurationDirectoryName: .sit
+        alias: sit
+
+
+...
