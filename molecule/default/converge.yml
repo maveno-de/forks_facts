@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: "Include maveno_de.forks_facts"
+    - name: "Include maveno_de.forks.facts"
       ansible.builtin.include_role:
-        name: "maveno_de.forks_facts"
+        name: "maveno_de.forks.facts"
