@@ -48,12 +48,14 @@
         alias: sky
       ecostake:
         repository: Ecostake-Network/ecostake-blockchain
+        databaseVersion: 1
         nodePort: 38444
         nodeRpcPort: 38554
         farmerPort: 38441
         alias: eco
       silicoin:
         repository: zcomputerwiz/silicoin-blockchain
+        databaseVersion: 1
         nodePort: 22222
         nodeRpcPort: 22555
         farmerPort: 22447
