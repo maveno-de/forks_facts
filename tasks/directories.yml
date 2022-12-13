@@ -10,7 +10,8 @@
       /var/local{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}
     forksUsersRootDirectory: >-
       /var/local{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}/lib
-
+    forksApplicationsRootDirectory: >-
+      /opt{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}/lib
 
 - name: Set Forks directory facts (part 2)
   set_fact:
