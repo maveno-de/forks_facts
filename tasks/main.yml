@@ -15,6 +15,13 @@
       tags: always
   tags: always
 
+- name: Load Forks common packages
+  include_tasks:
+    file: packages.yml
+    apply:
+      tags: always
+  tags: always
+     
 - name: Load Forks python facts
   include_tasks:
     file: python.yml
