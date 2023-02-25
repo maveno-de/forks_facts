@@ -12,11 +12,14 @@
       /var/local{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}/lib
     forksApplicationsRootDirectory: >-
       /opt{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}/lib
+    forksLoggingDirectory: >-
+      /var/log{% if forksVendorIdentifier is defined %}/{{ forksVendorIdentifier }}{% endif %}/forks
+
 
 - name: Set Forks directory facts (part 2)
   set_fact:
 
-    forksManagingLocalBinaryDirectory: "{{ forksManagingHomeDirectory|default('/root') }}/.local/bin"
+    forksManagingLocalBinaryDirectory: "{{ forksManagingHomeDirectory | default('/root') }}/.local/bin"
 
     forksSourceDirectory: "{{ forksPrefixDirectory }}/src"
     forksLibraryDirectory: "{{ forksPrefixDirectory }}/lib"

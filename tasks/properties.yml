@@ -4,12 +4,13 @@
 - name: Set Forks properties
   set_fact:
 
-    forksPropertiesLookupTable:
+    forksProperties:
       chia:
         repository: Chia-Network/chia-blockchain
         nodePort: 8444
         nodeRpcPort: 8555
         farmerPort: 8447
+        defaultBranch: latest
       chives:
         repository: HiveProject2021/chives-blockchain
         nodePort: 9699
